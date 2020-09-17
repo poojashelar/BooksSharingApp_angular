@@ -37,11 +37,6 @@ import { BooksModule } from './books/books.module';
     StoreDevtoolsModule.instrument(),
     StoreModule.forRoot(reducers, {}),
     EffectsModule.forRoot([AuthEffects, BookEffect]),
-    RouterModule.forRoot([
-      { path: 'log-in', component: LogInComponent },
-      { path: 'sign-up', component: SignUpComponent },
-      { path: '', component: BookComponent },
-    ]),
     HttpClientModule,
     AppRoutingModule,
     BooksModule

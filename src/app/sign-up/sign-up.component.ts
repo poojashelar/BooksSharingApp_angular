@@ -27,6 +27,7 @@ export class SignUpComponent implements OnInit {
     this.getState.subscribe((state) => {
       this.errorMessage = state.errorMessage;
     });
+    this.errorMessage = null;
   }
   onSubmit(): void {
     const payload = {
